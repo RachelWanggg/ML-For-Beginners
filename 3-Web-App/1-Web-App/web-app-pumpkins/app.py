@@ -21,10 +21,10 @@ def predict():
 
     output = prediction[0]
 
-    countries = ["Australia", "Canada", "Germany", "UK", "US"]
+    colors = ["Organge", "White"]
 
     return render_template(
-        "index.html", prediction_text="Likely country: {}".format(countries[output])
+        "index.html", prediction_text="Likely color: {}".format(colors[output])
     )
 
 
